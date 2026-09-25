@@ -1,0 +1,9 @@
+# Exported from Render on 2026-09-20T10:59:29Z
+version: "1"
+services:
+  - type: web
+    name: foodshare
+    runtime: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    autoDeployTrigger: "off"
